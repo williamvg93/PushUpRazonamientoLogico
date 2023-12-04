@@ -11,6 +11,7 @@ public class ConfechVotes
     {
         System.Console.WriteLine("Enter the number of universities: ");
         int numUni = int.Parse(Console.ReadLine());
+        Console.Clear();
         int uniAcep = 0;
         int uniRech = 0;
         int uniEmp = 0;
@@ -23,8 +24,9 @@ public class ConfechVotes
             int votosR = 0;
             int votosN = 0;
             int votosB = 0;
+            string uniName = "";
             System.Console.WriteLine("Enter the name of the university: ");
-            string uniName = Console.ReadLine();
+            uniName = Console.ReadLine();
             bool contWhile = true;
             Votos += $"\nUniversity Name: {uniName}";
             while (contWhile)
@@ -53,11 +55,13 @@ public class ConfechVotes
                         votosB += 1;
                         break;
                     case "X":
-                        Votos += "\nVoto: X";
+                        Votos += "\nVoto: X\n";
                         contWhile = false;
+                        Console.Clear();
                         break;
                     default:
                         System.Console.WriteLine("Enter a valid Option...");
+                        Console.ReadKey();
                         break;
                 }
             }
@@ -74,7 +78,7 @@ public class ConfechVotes
                 uniEmp += 1;
             }
 
-            Votos += $"{uniName}: {votosA} Aceptan, {votosR} Rechazan, {votosB} Blancos, {votosN} Nulos";
+            Votos += $"{uniName}: {votosA} Aceptan, {votosR} Rechazan, {votosB} Blancos, {votosN} Nulos\n";
         }
 
         Console.WriteLine(Votos);

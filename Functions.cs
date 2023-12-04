@@ -16,7 +16,7 @@ public class Functions
         Console.WriteLine("{0, 3}", "2) Check if a number is fibonacci");
         Console.WriteLine("{0, 3}", "3) Fibonacci number List");
         Console.WriteLine("{0, 3}", "4) Russian Multiplication");
-        Console.WriteLine("{0, 3}", "5) Friendly Numbers");
+        Console.WriteLine("{0, 3}", "5) Friendly Numbers BetWenn 1000 - 1500");
         Console.WriteLine("{0, 3}", "6) Confech Votes");
         Console.WriteLine("{0, 3}", "10) Exit");
         Console.WriteLine("Enter the Menu Option: ");

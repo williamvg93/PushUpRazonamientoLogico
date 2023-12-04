@@ -25,8 +25,6 @@ public class RussianMultiplication
             }
             Multiplicador /= 2;
             Multiplicando *= 2;
-            /* Console.WriteLine($"Multiplicador: {Multiplicador}");
-            Console.WriteLine($"Multiplicando: {Multiplicando}"); */
         }
         Console.WriteLine($"Result: {Total}");
     }
