@@ -48,9 +48,6 @@ public class FriendlyNumbers
                     return;
                 }
             }
-
         }
-        System.Console.WriteLine("Finalizó la ejecución");
-
     }
 }
